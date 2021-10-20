@@ -38,6 +38,20 @@ public class SpecialCharactersTest {
 	public void testString3() {
 		
 		// given
+		String strToTest = "abcdefghijklmnopqrstuvwxyz 0123456789";
+		
+		// when
+		SpecialCharacters sc = new SpecialCharacters();
+		int actualResult = sc.numberOfSpecialCharacters(strToTest);
+		
+		// then
+		assertEquals(0, actualResult);
+	}
+	
+	@Test
+	public void testString4() {
+		
+		// given
 		String strToTest = "abcdefghijklmnopqrstuvwxyz0123456789";
 		
 		// when
