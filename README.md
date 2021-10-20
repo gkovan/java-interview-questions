@@ -7,7 +7,7 @@ Special characters are any characters that are not a letter or a number. Whitesp
 Examples of special characters:  
 
 * $ (dollar) 
-* # (hash)
+* \# (hash)
 * ! (Exclamation) 
 * , (comma)
 * etc.
