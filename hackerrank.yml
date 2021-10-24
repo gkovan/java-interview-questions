@@ -1,0 +1,15 @@
+version: 1.0
+configuration:
+  has_webserver: false
+  scoring:
+    command: "cd java-interview-questions; mvn clean test"
+    files:
+      - "java-interview-questions/target/customReports/result.xml"
+  ide_config:
+    default_open_files:
+      - java-interview-questions/src/main/java/com/example/questions/account/AccountController.java
+      - java-interview-questions/src/main/java/com/example/questions/account/AccountModel.java
+    project_menu:
+      run: "cd java-interview-questions; mvn clean spring-boot:run"
+      install: "cd java-interview-questions; mvn clean install"
+      test: "cd java-interview-questions; mvn clean test; cat target/customReports/result.txt"
